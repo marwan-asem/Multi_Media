@@ -37,20 +37,35 @@ This project directly addresses core concepts of Multimedia design:
 
 ## How to Run Locally
 
-### Option 1: Python Local Server (Recommended)
-Since you have Python installed, this is the best way to run the site as it properly handles file paths and media loading.
+To run this project on your local machine, follow these steps:
 
-1.  Open your terminal.
-2.  Navigate to the project directory:
-    ```bash
-    cd /mnt/data/Projects/MultiMedia
-    ```
-3.  Start the server:
-    ```bash
-    python3 -m http.server 8000
-    ```
-4.  Open your web browser and go to:
-    [http://localhost:8000](http://localhost:8000)
+### 1. Clone the Repository
+Open your terminal and run the following command to clone the repository:
+```bash
+git clone https://github.com/marwan-asem/Multi_Media.git
+```
 
-### Option 2: Direct File Open
-You can also simply double-click the `index.html` file to open it in your browser, though some browser security settings might restrict certain features.
+### 2. Navigate to the Directory
+Change into the project directory:
+```bash
+cd Multi_Media
+```
+
+### 3. Run the Project
+You can run the project using a simple local server.
+
+#### Using Python (Recommended)
+If you have Python installed:
+```bash
+python3 -m http.server 8000
+```
+Then open your browser and visit: [http://localhost:8000](http://localhost:8000)
+
+#### Using VS Code Live Server
+If you use Visual Studio Code:
+1.  Install the "Live Server" extension.
+2.  Right-click on `index.html`.
+3.  Select "Open with Live Server".
+
+### 4. Direct File Open
+Alternatively, you can simply double-click the `index.html` file to open it in your browser, though some features might be restricted by browser security settings.
