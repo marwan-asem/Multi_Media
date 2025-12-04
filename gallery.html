@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Gallery - Exhibits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Multimedia Gallery</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="video.html">Video Exhibits</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><button id="audio-control">Play Music 🎵</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Art Gallery</h1>
+        <p>Click on an image to view details.</p>
+        <br>
+
+        <div class="gallery-grid">
+            <!-- Gallery Item 1 -->
+            <div class="card" data-desc="A masterpiece from the 18th century, depicting the raw power of nature.">
+                <img src="assets/images/gallery_1.png" alt="The Stormy Sea">
+                <div class="card-info">
+                    <h3>The Stormy Sea</h3>
+                </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="card" data-desc="A modern bronze sculpture exploring form and negative space.">
+                <img src="assets/images/gallery_2.png" alt="Abstract Form">
+                <div class="card-info">
+                    <h3>Abstract Form</h3>
+                </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="card" data-desc="An immersive digital installation using light and geometry.">
+                <img src="assets/images/gallery_3.png" alt="Neon Dreams">
+                <div class="card-info">
+                    <h3>Neon Dreams</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="gallery-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div class="modal-info">
+            <h2 id="modal-title"></h2>
+            <p id="modal-desc"></p>
+        </div>
+    </div>
+
+
+
+    <!-- Background Music (Hidden) -->
+    <audio id="bg-music" loop>
+        <source src="https://server16.mp3quran.net/The-ten-readings/Rewayat-Qalon-A-n-Nafi-Jame/Sabdulhakam/076.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

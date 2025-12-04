@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Gallery - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Multimedia Gallery</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="video.html">Video Exhibits</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><button id="audio-control">Play Music 🎵</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to the Multimedia Project</h1>
+                <p>ادخل بص واتفرج وسمي قبل ما تدخل</p>
+                <br>
+                <a href="gallery.html" class="btn">Enter Museum</a>
+            </div>
+        </section>
+
+        <section class="highlights container">
+            <div class="highlight-item">
+                <h2>Current Exhibitions</h2>
+                <p>Discover our latest collection of interactive digital art, featuring works from renowned
+                    international artists. Immerse yourself in a world where code meets canvas.</p>
+            </div>
+            <div class="highlight-item">
+                <h2>Plan Your Visit</h2>
+                <p>We are open 24/7 in the digital realm. No tickets required. Best experienced with headphones for our
+                    immersive audio guides.</p>
+            </div>
+            <div class="highlight-item">
+                <h2>Upcoming Events</h2>
+                <p>Join us for our monthly virtual meetups and artist talks. Stay tuned for the "Future of AI Art"
+                    symposium coming next month.</p>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- Background Music (Hidden) -->
+    <audio id="bg-music" loop>
+        <source src="https://server16.mp3quran.net/The-ten-readings/Rewayat-Qalon-A-n-Nafi-Jame/Sabdulhakam/076.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

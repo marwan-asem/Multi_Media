@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Gallery - Video Exhibits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Multimedia Gallery</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="video.html" class="active">Video Exhibits</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><button id="audio-control">Play Music 🎵</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Video Exhibits</h1>
+        <p>Watch our featured short films and documentaries.</p>
+        <br>
+
+        <div class="video-container">
+            <!-- Video 1 -->
+            <div class="video-item">
+                <h2>Big Buck Bunny</h2>
+                <video controls poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217">
+                    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>A large and lovable rabbit deals with three tiny bullies, led by a flying squirrel.</p>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-item">
+                <h2>Elephant's Dream</h2>
+                <video controls>
+                    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>The world's first open movie, made entirely with open source graphics software such as Blender.</p>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- Background Music (Hidden) -->
+    <audio id="bg-music" loop>
+        <source src="https://server16.mp3quran.net/The-ten-readings/Rewayat-Qalon-A-n-Nafi-Jame/Sabdulhakam/076.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
